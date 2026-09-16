@@ -1,2 +1,2 @@
-# Persian-TTS
-Persian Text-to-Speech from Scratch
+# ِEnglish-TTS
+English Text-to-Speech from Scratch

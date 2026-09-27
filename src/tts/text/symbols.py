@@ -32,7 +32,10 @@ PHONEMES = [
 ]
 
 
-SYMBOLS = [PAD, BOS, EOS, UNK] + PHONEMES
+# Append additions to keep all existing token IDs stable. These are emitted by
+# eSpeak en-us on LJSpeech, including the combining syllabic mark U+0329.
+EXTRA_SYMBOLS = ["ᵻ", "ɾ", "̩", "ʔ", "(", ")", "x", "[", "]"]
+SYMBOLS = [PAD, BOS, EOS, UNK] + PHONEMES + ["|"] + EXTRA_SYMBOLS
 
 
 # Symbol → ID

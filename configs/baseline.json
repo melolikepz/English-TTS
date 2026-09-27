@@ -1,0 +1,29 @@
+{
+  "audio": {
+    "sample_rate": 22050,
+    "n_fft": 1024,
+    "win_length": 1024,
+    "hop_length": 256,
+    "n_mels": 80,
+    "f_min": 0,
+    "f_max": 8000
+  },
+  "model": {
+    "embedding_dim": 192,
+    "encoder_dim": 256,
+    "decoder_dim": 256,
+    "attention_dim": 128,
+    "prenet_dim": 128,
+    "dropout": 0.1
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 8,
+    "epochs": 100,
+    "learning_rate": 0.0003,
+    "grad_clip": 1.0,
+    "validation_fraction": 0.02,
+    "guided_attention_weight": 1.0,
+    "num_workers": 0
+  }
+}

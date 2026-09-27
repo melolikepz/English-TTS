@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local speech data, trained weights, generated audio and notebook runtime
+data/raw/*
+!data/raw/wavs/
+data/raw/wavs/*
+!data/raw/wavs/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+outputs/*
+!outputs/.gitkeep
+.ipynb_checkpoints/
